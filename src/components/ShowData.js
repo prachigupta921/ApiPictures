@@ -27,7 +27,6 @@ const ShowData=()=>{
 		})
 		.then((data)=>{
             const newproduct=data.data.find((item)=>item.id=== parseInt(id));
-            //console.log(newproduct);
             setshow(newproduct)
 		})
 		.catch((err)=>console.log(err));
